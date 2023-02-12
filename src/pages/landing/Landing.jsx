@@ -10,7 +10,7 @@ export default function landing() {
             <div className="landing-row">
                 <div className="landing-nav">
                     <h1>Organize<span>ME</span></h1>
-                    <a href="/">Open Source</a>
+                    <a href="https://github.com/gonz4216/OrganizeME">Open Source</a>
                 </div>
 
                 <div className="landing--main">
