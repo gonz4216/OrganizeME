@@ -1,0 +1,167 @@
+@font-face {
+  font-family:"Grifter" ;
+  src: url('./assets/GRIFTER\ Bold\ 700.otf');
+}
+@font-face {
+  font-family:"Ail-Light" ;
+  src: url('./assets/Aileron-Light.otf');
+}
+@font-face {
+  font-family:"Ail-Reg" ;
+  src: url('./assets/Aileron-Regular.otf');
+}
+ 
+:root {
+  --heading-color: rgb(255, 255, 255);
+  --text-color: rgb(253, 253, 253);
+  --primary-color: #74B7E4;
+  --highlight-color: #d13267;
+  --bg-color: #282828;
+}
+
+.supported{
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+  background-color: #282828;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 998px) {
+  .supported {
+    display: flex;
+  }
+}
+
+body {
+  font-family: Ail-Light, sans-serif;
+  margin: 0;
+  font-size: 1.1em;
+  background: var(--bg-color);
+}
+ul, li, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+/* layout */
+.page-title {
+  font-size: 1em;
+  color: var(--heading-color);
+  display: inline-block;
+}
+ 
+ 
+
+ 
+
+
+/* CSS */
+.btn {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #74B7E4, #4dadec);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 0;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.btn:hover {
+  box-shadow: #92c1e1 0 3px 8px;
+}
+
+.btn:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+
+
+
+
+
+
+/* forms */
+label {
+  display: block;
+  margin: 24px auto;
+}
+label span {
+  display: block;
+  margin-bottom: 6px;
+  color: white;
+}
+input, textarea {
+  padding: 8px 6px;
+  font-size: 1em;
+  color: rgb(104, 104, 104);
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Ail-Light' !important;
+}
+textarea {
+  min-height: 160px;
+  font-family: 'Ail-Light' !important;
+}
+.error {
+  color: red;
+  background: pink;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.supp-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.supp-main h1{
+  font-family: 'Grifter';
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+}
+
+.supp-main img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.supp-main p{
+  color: rgb(215, 215, 215);
+  padding-bottom: 20px;
+}

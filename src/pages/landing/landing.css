@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Grifter";
+  src: url(".././../assets/GRIFTER\ Bold\ 700.otf");
+}
+@font-face {
+  font-family: "Ail-Light";
+  src: url(".././../assets/Aileron-Light.otf");
+}
+@font-face {
+  font-family: "Ail-Reg";
+  src: url(".././../assets/Aileron-Regular.otf");
+}
+* {
+  box-sizing: border-box;
+}
+.splash {
+  position: absolute;
+  z-index: -19;
+  left: -250px;
+  width: 900px;
+}
+.landing--hero {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+
+.landing-row {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.landing-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.landing-nav h1 {
+  font-family: "Grifter", sans-serif;
+  font-size: 45px;
+}
+
+.landing-nav span {
+  font-family: "Grifter", sans-serif;
+  color: #74b7e4;
+}
+.landing-nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  color: #232323;
+  border-radius: 10px;
+  border: 5px #74b7e4 solid;
+  padding: 10px 26px;
+  font-weight: 600;
+}
+
+.landing--main {
+  display: flex;
+
+  align-items: center;
+  margin: 0 auto;
+}
+.main--left {
+  width: 50%;
+}
+.main--left h1 {
+  font-family: "Grifter";
+  font-size: 50px;
+}
+.main--left p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  padding-top: 20px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.main--left span {
+  color: #74b7e4;
+}
+.main--left a {
+  font-family: "Grifter";
+  border-radius: 10px;
+  padding: 15px 60px;
+  text-decoration: none;
+
+  background-color: #74b7e4;
+  color: #ffffff;
+}
+.main--right img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.footer--landing {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer--landing {
+  text-decoration: none;
+  color: #232323;
+}
+.footer--landing img {
+  width: 100%;
+  max-width: 22px;
+}
+.footer--landing h2 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+@media (max-width: 1022px) {
+  .landing--main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .main--left h1{
+    text-align: center;
+  }
+  .main--left p{
+    text-align: center;
+  }
+  .main--left {
+        text-align: center;
+      
+  }
+}

@@ -1,0 +1,20 @@
+.App {
+  display: flex;
+}
+.App .container{
+  flex-grow: 1;
+  padding: 0 60px;
+}
+
+@font-face {
+  font-family:"Grifter" ;
+  src: url('./assets/GRIFTER\ Bold\ 700.otf');
+}
+@font-face {
+  font-family:"Ail-Light" ;
+  src: url('./assets/Aileron-Light.otf');
+}
+@font-face {
+  font-family:"Ail-Reg" ;
+  src: url('./assets/Aileron-Regular.otf');
+}
